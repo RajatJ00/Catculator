@@ -1,0 +1,125 @@
+body {
+    background: whitesmoke;
+}
+
+#calculator {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid white;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 30px;
+    background-image: url("Catculator.jpeg");
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#answer {
+    max-width: 300px;
+    min-width: 100px;
+    height: 100px;
+    margin:0 auto;
+    border-radius: 30px;
+    text-align: center;
+}
+
+input {
+    width: 120px;
+    height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    outline: none;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    color: white;
+    font-family: Avenir;
+    font-weight: bold;
+    opacity: .3;
+}
+input:visited{
+    opacity: 1;
+}
+input:hover{
+    box-shadow:inset 0 0 10px 5px white;
+}
+
+#main_container {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 40px 0 40px;
+}
+
+#mode_container{
+    width: fit;
+    height: fit;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -20px 0 65px 0;
+}
+
+#mode {
+    background: #0000;
+    border: none;
+    color: black;
+    font-size: 50px;
+    appearance: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    opacity:.2; 
+    z-index: 1;
+    border-radius: 20px 20px 50% 50%;
+}
+#mode:hover{
+    opacity: 1;
+}
+#main_nose:hover{
+    box-shadow: 0 0 10px black;
+}
+
+.nose{
+    width: 70px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 0;
+}
+.left{
+    transform: rotate(65deg);
+    top: 30px;
+    left: 205px;
+    width: 60px;
+}
+.right{
+    transform: rotate(-65deg);
+    top: 30px;
+    right: 205px;
+    width: 60px;
+}
+
+#btn{
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 50%;
+    height: fit;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    opacity:.10;
+    font-weight: bold;
+    font-size: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease-out;
+}
+button:hover{
+    opacity: 1;
+}

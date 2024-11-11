@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+	<div id="calculator">
+		<div id="answer">
+			<h1 id="output"></h1>
+		</div>
+
+		<div id="main_container">
+
+			<input placeholder="No.1" type="number" id="n1" autocomplete="off" />
+
+			<input placeholder="No.2" type="number" id="n2" autocomplete="off" />
+
+		</div>
+
+		<div id="mode_container">
+			<select id="mode">
+				<option value="+">+</option>
+				<option value="-">−</option>
+				<option value="*">×</option>
+				<option value="/">÷</option>
+			</select>
+			<div id="main_nose">
+				<div class="nose"></div>
+				<div class="nose left"></div>
+				<div class="nose right"></div>
+			</div>
+		</div>
+
+		<div id="btn">
+			<button onclick="submit()">=</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
